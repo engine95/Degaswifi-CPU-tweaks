@@ -13,11 +13,11 @@ rm -rf out
 echo '#############'
 echo 'making defconfig'
 echo '#############'
-make pxa1088_degaswifi_eur_defconfig
+make pxa1088_degaswifi_usa_defconfig
 echo '#############'
 echo 'making zImage'
 echo '#############'
-time make -j20 CONFIG_NO_ERROR_ON_MISMATCH=y
+time make -j2 CONFIG_NO_ERROR_ON_MISMATCH=y
 echo '#############'
 echo 'making DTB'
 echo '#############'
