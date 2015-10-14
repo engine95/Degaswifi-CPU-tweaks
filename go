@@ -3,8 +3,8 @@ rm -frv build
 make clean && make mrproper
 mkdir -pv build/out/modules build/out/dt_image
 export ARCH=arm
-export CROSS_COMPILE=../arm-eabi-4.9/bin/arm-eabi-
-export STRIP=../arm-eabi-4.9/bin/arm-eabi-strip
+export CROSS_COMPILE=../linaro-armeabi_4.9-a9-master/bin/arm-eabi-
+export STRIP=../linaro-armeabi_4.9-a9-master/bin/arm-eabi-strip
 make pxa1088_degaswifi_usa_defconfig
 make menuconfig && wait
 make CONFIG_NO_ERROR_ON_MISMATCH=y && make modules
